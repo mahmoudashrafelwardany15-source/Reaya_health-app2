@@ -1,0 +1,8 @@
+Static validation results (not a live Gemini API test):
+node_available: True
+node_version: v22.16.0
+server_js_syntax_ok: True
+server_js_check_output: 
+package_json_valid: True
+html_exists: True
+chat_integrated: True
