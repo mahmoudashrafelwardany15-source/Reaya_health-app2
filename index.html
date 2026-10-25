@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4A2C3F">
+<link rel="manifest" href="/manifest.json">
+<title>رعاية | منصة الخدمات الصحية</title>
+<style>
+:root{--bg:#FCF9F6;--plum:#4A2C3F;--rose:#E8D9E1;--ink:#29232a;--muted:#827781;--line:#eee4e9;--white:#fff;--green:#49745d;--red:#a84c55;--gold:#9b7230;--shadow:0 12px 35px #4a2c3f0b;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.65}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #c8a9ba;outline-offset:2px}a{color:inherit}.app{min-height:100vh;display:grid;grid-template-columns:258px minmax(0,1fr)}.sidebar{background:var(--plum);color:white;padding:22px 16px;position:sticky;top:0;height:100vh;overflow:auto;z-index:20}.brand{display:flex;align-items:center;gap:12px;padding:0 8px 22px;border-bottom:1px solid #ffffff24}.logo{height:47px;width:47px;border-radius:16px;background:var(--rose);color:var(--plum);display:grid;place-items:center;font-size:25px;font-weight:900}.brand h1{margin:0;font-size:23px;letter-spacing:.2px}.brand small{font-size:11px;color:#e4d5de}.nav-label{font-size:10px;color:#cbb9c5;margin:22px 12px 8px}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#f3e9ef;text-align:right;display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:12px;font-size:13px;transition:.18s}.nav button:hover,.nav button.active{background:#ffffff1c;color:#fff}.nav .ico{width:23px;text-align:center;font-size:17px}.side-bottom{margin-top:22px;padding:13px;border-radius:13px;background:#ffffff12;color:#eadde5;font-size:11px}.main{min-width:0}.topbar{height:78px;background:#fcf9f6ee;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:0 30px;backdrop-filter:blur(12px)}.topbar h2{margin:0;font-size:18px}.topbar p{margin:2px 0 0;color:var(--muted);font-size:11px}.top-actions{display:flex;align-items:center;gap:12px}.avatar{height:41px;width:41px;border-radius:14px;background:var(--rose);color:var(--plum);display:grid;place-items:center;font-weight:800}.content{max-width:1550px;margin:auto;padding:26px}.page{display:none}.page.active{display:block}.eyebrow{color:var(--plum);font-size:11px;font-weight:800;letter-spacing:.4px}.hero{background:linear-gradient(120deg,#4A2C3F,#654357);border-radius:24px;color:#fff;padding:32px;display:grid;grid-template-columns:1.35fr .65fr;gap:20px;align-items:center;box-shadow:var(--shadow);overflow:hidden}.hero h2{font-size:clamp(28px,3.2vw,43px);line-height:1.45;margin:8px 0}.hero p{color:#eddee7;max-width:620px;font-size:14px}.hero-art{height:175px;width:175px;margin:auto;border-radius:48px;background:#ffffff12;border:1px solid #ffffff20;display:grid;place-items:center;font-size:90px;transform:rotate(7deg)}.hero .eyebrow{color:#e9d5e1}.btn{border:0;border-radius:11px;padding:10px 15px;background:var(--plum);color:white;display:inline-flex;justify-content:center;align-items:center;gap:7px;font-size:12px;font-weight:700;transition:.18s}.btn:hover{transform:translateY(-1px);filter:brightness(1.08)}.btn.light{background:var(--rose);color:var(--plum)}.btn.ghost{background:transparent;color:var(--plum);border:1px solid var(--line)}.btn.white{background:white;color:var(--plum)}.btn.danger{background:#f9e9e9;color:#923d46}.btn.success{background:#e6f2e9;color:#315f40}.btn.sm{padding:6px 9px;font-size:11px}.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}.section-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:27px 0 14px}.section-head h2,.section-head h3{margin:0;font-size:18px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);min-width:0}.stat{display:flex;gap:13px;align-items:center}.stat-icon{width:47px;height:47px;border-radius:15px;background:var(--rose);display:grid;place-items:center;font-size:22px;flex-shrink:0}.stat strong{display:block;font-size:25px;color:var(--plum);line-height:1.25}.stat span{color:var(--muted);font-size:11px}.quick{width:100%;display:flex;align-items:center;gap:12px;text-align:right;background:white;border:1px solid var(--line);border-radius:15px;padding:16px}.quick:hover{border-color:#c6a7b8}.quick .emoji{font-size:27px}.quick b{display:block;color:var(--plum);font-size:13px}.quick small{display:block;color:var(--muted);font-size:11px}.search-panel{display:flex;gap:9px;flex-wrap:wrap;padding:13px;background:#fff;border:1px solid var(--line);border-radius:15px;margin:15px 0}.search-panel input{flex:1;min-width:180px}.search-panel select{width:auto;min-width:145px}.field{min-width:0;margin-bottom:13px}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px}input,select,textarea{width:100%;min-width:0;border:1px solid #e6dce2;background:#fff;border-radius:10px;padding:10px 11px;color:var(--ink)}textarea{resize:vertical}input::placeholder,textarea::placeholder{color:#b0a4ad}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 13px}.full{grid-column:1/-1}.muted{color:var(--muted);font-size:12px}.notice{padding:12px 14px;border-radius:12px;background:#fff4dc;color:#75551b;font-size:12px;margin:13px 0}.notice.good{background:#eaf5ed;color:#315c40}.notice.bad{background:#fbeaea;color:#8b333c}.tag{display:inline-flex;align-items:center;gap:5px;background:#f5edf1;color:var(--plum);border-radius:30px;padding:3px 9px;font-size:10px;font-weight:700}.tag.green{background:#e7f4eb;color:#356346}.tag.gold{background:#fff3d9;color:#86601e}.provider-card{display:flex;flex-direction:column;gap:12px}.provider-top{display:flex;gap:11px;align-items:flex-start}.provider-icon{width:49px;height:49px;flex-shrink:0;border-radius:15px;background:var(--rose);display:grid;place-items:center;font-size:25px}.provider-title{min-width:0;flex:1}.provider-title h3{font-size:15px;line-height:1.5;margin:0 0 3px;overflow-wrap:anywhere}.provider-meta{display:grid;gap:6px;font-size:11px;color:var(--muted)}.provider-meta span{display:flex;gap:7px;align-items:flex-start}.provider-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}.favorite{border:0;background:transparent;color:var(--plum);font-size:21px;padding:0 4px}.empty{grid-column:1/-1;text-align:center;background:#fff;border:1px dashed #d7c6d0;border-radius:15px;padding:30px;color:var(--muted)}.table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse;font-size:12px}.table th,.table td{text-align:right;padding:11px;border-bottom:1px solid var(--line);vertical-align:top;white-space:normal}.table th{background:#f7f0f4;color:var(--plum)}.table td .btn{margin:2px}.chatbox{height:350px;overflow:auto;padding:14px;border:1px solid var(--line);background:#fff;border-radius:15px;margin-bottom:12px}.msg{padding:10px 13px;border-radius:14px;max-width:86%;margin:8px 0;white-space:pre-wrap;font-size:13px}.msg.bot{background:#f3eaf0;margin-left:auto}.msg.user{background:var(--plum);color:white;margin-right:auto}.chat-form{display:flex;gap:8px}.chat-form input{flex:1}.dose-row,.notification-row,.report-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.dose-row:last-child,.notification-row:last-child,.report-row:last-child{border-bottom:0}.progress{height:7px;background:#f1e9ee;border-radius:30px;overflow:hidden;margin:8px 0}.progress span{display:block;height:100%;background:var(--green)}.modal-backdrop{display:none;position:fixed;inset:0;background:#1c121bd9;z-index:100;align-items:center;justify-content:center;padding:16px}.modal-backdrop.open{display:flex}.modal{width:min(700px,100%);max-height:92vh;overflow:auto;background:var(--bg);border-radius:20px;padding:23px;box-shadow:0 25px 80px #0003}.modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.modal-head h3{margin:0;font-size:19px}.close{border:0;background:transparent;color:var(--plum);font-size:28px}.toast{display:none;position:fixed;bottom:20px;left:20px;z-index:200;background:var(--plum);color:white;border-radius:12px;padding:13px 17px;max-width:90vw;box-shadow:var(--shadow);font-size:13px}.mobile-menu{display:none}.footer{padding:25px;text-align:center;color:var(--muted);font-size:11px}.result-count{font-size:11px;color:var(--muted)}.setting-card h3{margin-top:0}.upload-preview{display:block;max-width:100%;max-height:250px;border-radius:12px;margin:10px 0}.hide{display:none!important}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.app{grid-template-columns:230px minmax(0,1fr)}.content{padding:20px}}
+@media(max-width:760px){.app{display:block}.sidebar{position:fixed;right:-270px;width:258px;transition:right .22s}.sidebar.open{right:0}.mobile-menu{display:inline-flex}.topbar{height:68px;padding:0 14px}.content{padding:14px}.hero{grid-template-columns:1fr;padding:23px}.hero-art{display:none}.grid,.grid.two{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.section-head{align-items:flex-start;flex-direction:column}.search-panel{display:grid;grid-template-columns:1fr}.search-panel select{width:100%}.topbar h2{font-size:15px}.topbar p{font-size:10px}.side-bottom{margin-bottom:20px}}
+@media print{.sidebar,.topbar,.btn,.section-head button,.footer{display:none!important}.app{display:block}.page{display:none!important}.page.active{display:block!important}.content{padding:0}.card{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="logo">✚</div><div><h1>رعاية</h1><small>منصة الخدمات الصحية</small></div></div>
+ <div class="nav-label">القائمة الرئيسية</div>
+ <nav class="nav" id="nav">
+  <button class="active" data-page="home"><span class="ico">⌂</span>الرئيسية</button>
+  <button data-page="directory"><span class="ico">⌕</span>دليل الخدمات الطبية</button>
+  <button data-page="assistant"><span class="ico">✧</span>المساعد الصحي</button>
+  <button data-page="profile"><span class="ico">♡</span>ملفي الصحي</button>
+  <button data-page="medications"><span class="ico">▤</span>الأدوية والتذكيرات</button>
+  <button data-page="labs"><span class="ico">▧</span>تقارير التحاليل</button>
+  <button data-page="favorites"><span class="ico">♥</span>المفضلة</button>
+  <button data-page="notifications"><span class="ico">♧</span>الإشعارات</button>
+  <div class="nav-label">إدارة التطبيق</div>
+  <button data-page="admin"><span class="ico">⚙</span>لوحة إدارة الخدمات</button>
+  <button data-page="settings"><span class="ico">☷</span>الإعدادات والنسخ الاحتياطي</button>
+ </nav>
+ <div class="side-bottom">بيانات مقدمي الخدمات يجب مراجعتها والتحقق منها قبل نشرها للمستخدمين. رعاية لا يستبدل الاستشارة الطبية.</div>
+</aside>
+<main class="main">
+<header class="topbar">
+ <div style="display:flex;align-items:center;gap:11px"><button class="btn light mobile-menu" id="menuBtn">☰</button><div><h2 id="pageTitle">أهلاً بيك في رعاية</h2><p id="dateLine"></p></div></div>
+ <div class="top-actions"><span class="tag green">● النسخة التجريبية</span><div class="avatar" id="avatar">م</div></div>
+</header>
+<div class="content">
+<section class="page active" id="page-home">
+ <div class="hero"><div><div class="eyebrow">رعايتك الصحية في مكان واحد</div><h2>قرارات صحية أوضح،<br>وتنظيم أسهل لحياتك.</h2><p>اكتشف الخدمات الصحية، احتفظ بملفك الطبي، وتابع أدويتك وتقاريرك من واجهة واحدة بسيطة ومنظمة.</p><button class="btn white" data-go="directory">استكشف دليل الخدمات ←</button> <button class="btn" style="background:#ffffff20" data-go="assistant">ابدأ مع المساعد ✧</button></div><div class="hero-art">✚</div></div>
+ <div class="section-head"><div><h2>نظرة عامة</h2><p>ملخص سريع لبياناتك داخل رعاية.</p></div></div>
+ <div class="grid">
+  <div class="card stat"><div class="stat-icon">🏥</div><div><strong id="statProviders">0</strong><span>خدمات في الدليل</span></div></div>
+  <div class="card stat"><div class="stat-icon">💊</div><div><strong id="statMeds">0</strong><span>أدوية مسجلة</span></div></div>
+  <div class="card stat"><div class="stat-icon">♥</div><div><strong id="statFav">0</strong><span>خدمات مفضلة</span></div></div>
+ </div>
+ <div class="section-head"><h2>اختصارات سريعة</h2></div>
+ <div class="grid">
+  <button class="quick" data-go="directory"><span class="emoji">🩺</span><span><b>ابحث عن طبيب أو خدمة</b><small>تخصصات وخدمات متعددة</small></span></button>
+  <button class="quick" data-go="profile"><span class="emoji">📋</span><span><b>ملفي الصحي</b><small>معلومات طبية يسهل الرجوع إليها</small></span></button>
+  <button class="quick" data-go="medications"><span class="emoji">⏰</span><span><b>إدارة الأدوية</b><small>تسجيل الجرعات ومتابعة المخزون</small></span></button>
+ </div>
+ <div class="section-head"><div><h2>خدمات الدليل</h2><p>البيانات الأولية مجرد أمثلة وتحتاج إلى تحقق.</p></div><button class="btn ghost sm" data-go="directory">عرض الكل</button></div>
+ <div class="grid" id="homeProviders"></div>
+</section>
+
+<section class="page" id="page-directory">
+ <div class="section-head"><div><h2>دليل الخدمات الطبية</h2><p>ابحث بالاسم أو التخصص أو المنطقة، ثم تواصل مع مقدم الخدمة مباشرة.</p></div><button class="btn" data-open-add>＋ إضافة خدمة</button></div>
+ <div class="search-panel"><input id="searchQuery" placeholder="اسم الطبيب، التخصص، المنطقة..."><select id="filterType"><option value="">كل أنواع الخدمات</option><option>طبيب</option><option>عيادة</option><option>مستشفى</option><option>صيدلية</option><option>معمل تحاليل</option><option>مركز أشعة</option><option>مركز طبي</option><option>علاج طبيعي</option></select><select id="filterArea"><option value="">كل المناطق</option></select><button class="btn" id="searchApply">بحث</button><button class="btn ghost" id="searchReset">مسح الفلاتر</button></div>
+ <div class="section-head"><span class="result-count" id="resultCount"></span><span class="muted">لا توجد خاصية حجز مواعيد في هذه النسخة.</span></div>
+ <div class="grid" id="providerGrid"></div>
+</section>
+
+<section class="page" id="page-assistant">
+ <div class="section-head"><div><h2>المساعد الصحي ✧</h2><p>مساعدة أولية لمعرفة التخصص المحتمل، وليست تشخيصًا طبيًا.</p></div></div>
+ <div class="notice">هذه النسخة تستخدم قواعد نصية بسيطة وليست نموذج ذكاء اصطناعي طبيًا. في حالات الطوارئ، اتصل بالإسعاف المحلي ولا تنتظر رد التطبيق.</div>
+ <div class="card"><div class="chatbox" id="chatbox" aria-live="polite"><div class="msg bot">أهلًا بك في رعاية. اكتب وصفًا عامًا للأعراض دون معلومات تعريفية حساسة، وسأقترح تخصصًا قد يكون مناسبًا.</div></div><form class="chat-form" id="chatForm"><input id="chatInput" placeholder="مثلاً: ألم في الأسنان منذ يومين..." required><button class="btn">إرسال</button></form><p class="muted">لا تكتب اسمك أو رقم هاتفك أو أي معلومات شخصية في المحادثة.</p></div>
+</section>
+
+<section class="page" id="page-profile">
+ <div class="section-head"><div><h2>ملفي الصحي</h2><p>احفظ المعلومات التي تريد عرضها على الطبيب.</p></div><button class="btn ghost" id="printProfile">طباعة / حفظ PDF</button></div>
+ <div class="notice">البيانات محفوظة في متصفح هذا الجهاز فقط. تجنب حفظ معلومات طبية حساسة على جهاز مشترك.</div>
+ <form id="profileForm" class="card"><div class="form-grid">
+  <div class="field"><label for="prName">الاسم</label><input id="prName" placeholder="الاسم"></div>
+  <div class="field"><label for="prPhone">رقم التواصل (اختياري)</label><input id="prPhone" type="tel" placeholder="رقم الهاتف"></div>
+  <div class="field"><label for="prBirth">تاريخ الميلاد</label><input id="prBirth" type="date"></div>
+  <div class="field"><label for="prBlood">فصيلة الدم</label><select id="prBlood"><option value="">غير محددة</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></div>
+  <div class="field full"><label for="prAllergies">الحساسية المعروفة</label><textarea id="prAllergies" rows="2"></textarea></div>
+  <div class="field full"><label for="prConditions">الأمراض والحالات المزمنة</label><textarea id="prConditions" rows="2"></textarea></div>
+  <div class="field full"><label for="prMeds">الأدوية الحالية</label><textarea id="prMeds" rows="2" placeholder="اكتب أسماء الأدوية كما وردت في الوصفة"></textarea></div>
+  <div class="field full"><label for="prNotes">ملاحظات طبية إضافية</label><textarea id="prNotes" rows="3"></textarea></div>
+ </div><button class="btn">حفظ الملف الصحي</button></form>
+</section>
+
+<section class="page" id="page-medications">
+ <div class="section-head"><div><h2>الأدوية والتذكيرات</h2><p>سجّل أدويتك حسب وصفة المختص وتابع الكمية التقديرية.</p></div><button class="btn" id="newMedication">＋ إضافة دواء</button></div>
+ <div class="notice">هذه النسخة لا ترسل تنبيهات في الخلفية ولا تتحقق من الجرعات المناسبة. لا تغيّر جرعة أو توقف دواء بناءً على التطبيق وحده.</div>
+ <div class="grid" id="medGrid"></div>
+ <div class="section-head"><h3>سجل الجرعات</h3></div><div class="card" id="doseLog"></div>
+ <div class="section-head"><h3>التداخلات الدوائية</h3></div><div class="card"><p>لا توجد قاعدة بيانات دوائية موثوقة متصلة بهذه النسخة، لذلك لا يمكن تأكيد التوافق بين الأدوية.</p><button class="btn light" id="interactionInfo">قراءة التنبيه</button></div>
+</section>
+
+<section class="page" id="page-labs">
+ <div class="section-head"><div><h2>تقارير التحاليل</h2><p>احتفظ بمعلومات التقارير وتواريخها وملاحظاتك.</p></div></div>
+ <div class="notice">لا يجري هذا الملف تحليلًا ذكيًا للصور أو تفسيرًا طبيًا للنتائج. يجب مراجعة القيم مع الطبيب أو المختبر، مع الوحدات والنطاقات المرجعية.</div>
+ <div class="card"><form id="labForm"><div class="form-grid">
+  <div class="field"><label for="labTitle">اسم التقرير *</label><input id="labTitle" required placeholder="مثلاً: صورة دم كاملة"></div>
+  <div class="field"><label for="labWhen">تاريخ التقرير</label><input id="labWhen" type="date"></div>
+  <div class="field full"><label for="labFile">صورة التقرير (معاينة فقط)</label><input id="labFile" type="file" accept="image/*"><img id="labPreview" class="upload-preview hide" alt="معاينة التقرير"></div>
+  <div class="field full"><label for="labText">القيم أو الملاحظات المكتوبة يدويًا</label><textarea id="labText" rows="3"></textarea></div>
+ </div><button class="btn">حفظ بيانات التقرير</button></form></div>
+ <div class="section-head"><h3>التقارير المحفوظة</h3></div><div class="grid" id="labGrid"></div>
+</section>
+
+<section class="page" id="page-favorites"><div class="section-head"><div><h2>المفضلة</h2><p>خدمات حفظتها للوصول السريع إليها.</p></div></div><div class="grid" id="favoriteGrid"></div></section>
+<section class="page" id="page-notifications"><div class="section-head"><div><h2>الإشعارات</h2><p>تنبيهات داخل التطبيق.</p></div><button class="btn ghost sm" id="clearNotices">مسح الكل</button></div><div class="card" id="noticeList"></div></section>
+
+<section class="page" id="page-admin">
+ <div class="section-head"><div><h2>لوحة إدارة الخدمات</h2><p>أضف الأطباء والمنشآت والخدمات، وعدّل البيانات أو احذفها وراجع البلاغات.</p></div><button class="btn" data-open-add>＋ إضافة مقدم خدمة</button></div>
+ <div class="notice">لوحة الإدارة هنا محلية وتجريبية بلا تسجيل دخول. في التطبيق المنشور، يجب حماية هذه الصفحة بصلاحيات أدمن على الخادم.</div>
+ <div class="grid">
+  <div class="card stat"><div class="stat-icon">🏥</div><div><strong id="adminServices">0</strong><span>مقدم خدمة مسجل</span></div></div>
+  <div class="card stat"><div class="stat-icon">⚑</div><div><strong id="adminReports">0</strong><span>بلاغ قيد المراجعة</span></div></div>
+  <div class="card stat"><div class="stat-icon">♥</div><div><strong id="adminFavs">0</strong><span>إضافة للمفضلة</span></div></div>
+ </div>
+ <div class="section-head"><h3>قاعدة دليل الخدمات</h3><button class="btn ghost sm" id="exportProviders">تصدير دليل الخدمات CSV</button></div>
+ <div class="search-panel"><input id="adminSearch" placeholder="ابحث داخل بيانات الدليل..."><select id="adminFilter"><option value="">كل الأنواع</option><option>طبيب</option><option>عيادة</option><option>مستشفى</option><option>صيدلية</option><option>معمل تحاليل</option><option>مركز أشعة</option><option>مركز طبي</option><option>علاج طبيعي</option></select><button class="btn" id="adminSearchBtn">تصفية</button></div>
+ <div class="card table-wrap"><table class="table"><thead><tr><th>الاسم</th><th>النوع / التخصص</th><th>المنطقة والعنوان</th><th>التواصل</th><th>إجراءات</th></tr></thead><tbody id="adminTable"></tbody></table></div>
+ <div class="section-head"><h3>مراجعة بلاغات المستخدمين</h3></div><div class="card" id="reportList"></div>
+</section>
+
+<section class="page" id="page-settings">
+ <div class="section-head"><div><h2>الإعدادات والخصوصية</h2><p>تحكم في بياناتك المحلية والنسخ الاحتياطية.</p></div></div>
+ <div class="grid two">
+  <div class="card setting-card"><h3>تصدير نسخة احتياطية</h3><p class="muted">نزّل بيانات التطبيق في ملف JSON للاحتفاظ بها.</p><button class="btn" id="exportAll">تصدير JSON</button></div>
+  <div class="card setting-card"><h3>استيراد نسخة احتياطية</h3><p class="muted">استرجع نسخة سبق تصديرها من رعاية.</p><input type="file" id="importFile" accept=".json,application/json"><button class="btn light" id="importData" style="margin-top:9px">استيراد البيانات</button></div>
+  <div class="card setting-card"><h3>الخصوصية</h3><p class="muted">بياناتك تبقى في تخزين المتصفح على هذا الجهاز. مسح بيانات المتصفح قد يحذفها.</p><button class="btn danger" id="resetData">إعادة ضبط بيانات التطبيق</button></div>
+  <div class="card setting-card"><h3>عن رعاية</h3><p>منصة تجريبية لتسهيل اكتشاف الخدمات الصحية وتنظيم المعلومات الطبية الشخصية.</p><span class="tag">الإصدار 2.0 — نموذج أولي</span></div>
+ </div>
+</section>
+</div>
+<div class="footer">رعاية © <span id="year"></span> — صحتك أولويتنا. هذه نسخة تجريبية وليست نظامًا طبيًا معتمدًا.</div>
+</main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal"><div class="modal-head"><h3 id="modalTitle">إضافة خدمة</h3><button class="close" id="modalClose" aria-label="إغلاق">×</button></div><div id="modalBody"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+"use strict";
+const $=id=>document.getElementById(id), STORAGE_KEY="reaya_pro_v2";
+const today=new Date();$("dateLine").textContent=today.toLocaleDateString("ar-EG",{weekday:"long",year:"numeric",month:"long",day:"numeric"});$("year").textContent=today.getFullYear();
+const seed=[
+{id:"demo1",name:"عيادة مثال للباطنة",type:"عيادة",specialty:"باطنة",area:"أضف المنطقة",address:"أضف العنوان بعد التحقق",hours:"أدخل ساعات العمل",phone:"",description:"بيانات تجريبية غير مؤكدة. راجعها قبل النشر.",verified:false},
+{id:"demo2",name:"طبيب أسنان — مثال",type:"طبيب",specialty:"أسنان",area:"أضف المنطقة",address:"أضف العنوان بعد التحقق",hours:"أدخل ساعات العمل",phone:"",description:"بيانات تجريبية غير مؤكدة. راجعها قبل النشر.",verified:false},
+{id:"demo3",name:"صيدلية — مثال",type:"صيدلية",specialty:"صيدلية",area:"أضف المنطقة",address:"أضف العنوان بعد التحقق",hours:"أدخل ساعات العمل",phone:"",description:"بيانات تجريبية غير مؤكدة. راجعها قبل النشر.",verified:false},
+{id:"demo4",name:"معمل تحاليل — مثال",type:"معمل تحاليل",specialty:"تحاليل طبية",area:"أضف المنطقة",address:"أضف العنوان بعد التحقق",hours:"أدخل ساعات العمل",phone:"",description:"بيانات تجريبية غير مؤكدة. راجعها قبل النشر.",verified:false},
+{id:"demo5",name:"مستشفى — مثال",type:"مستشفى",specialty:"رعاية عامة",area:"أضف المنطقة",address:"أضف العنوان بعد التحقق",hours:"أدخل ساعات العمل",phone:"",description:"بيانات تجريبية غير مؤكدة. راجعها قبل النشر.",verified:false},
+{id:"demo6",name:"مركز أشعة — مثال",type:"مركز أشعة",specialty:"أشعة",area:"أضف المنطقة",address:"أضف العنوان بعد التحقق",hours:"أدخل ساعات العمل",phone:"",description:"بيانات تجريبية غير مؤكدة. راجعها قبل النشر.",verified:false}
+];
+const fresh=()=>({providers:seed.map(x=>({...x})),profile:{},medications:[],doses:[],labs:[],favorites:[],reports:[],notifications:[{id:uid(),text:"مرحبًا بك في رعاية. تحقق من بيانات مقدمي الخدمات قبل الاعتماد عليها.",date:new Date().toISOString()}]});
+function uid(){return "r"+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function load(){try{const v=JSON.parse(localStorage.getItem(STORAGE_KEY));if(v&&Array.isArray(v.providers))return {...fresh(),...v};}catch(e){}return fresh()}
+let db=load();
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(db));renderAll()}catch(e){toast("تعذر الحفظ؛ قد تكون مساحة المتصفح ممتلئة.")}}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function toast(s){const el=$("toast");el.textContent=s;el.style.display="block";clearTimeout(toast.t);toast.t=setTimeout(()=>el.style.display="none",3200)}
+function typeIcon(t){return ({"طبيب":"🩺","عيادة":"⚕️","مستشفى":"🏥","صيدلية":"💊","معمل تحاليل":"🧪","مركز أشعة":"🩻","مركز طبي":"✚","علاج طبيعي":"🧘"})[t]||"✚"}
+const titles={home:"أهلاً بيك في رعاية",directory:"دليل الخدمات الطبية",assistant:"المساعد الصحي",profile:"ملفي الصحي",medications:"الأدوية والتذكيرات",labs:"تقارير التحاليل",favorites:"المفضلة",notifications:"الإشعارات",admin:"لوحة إدارة الخدمات",settings:"الإعدادات والخصوصية"};
+function navigate(page){document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));$("page-"+page)?.classList.add("active");document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("active",b.dataset.page===page));$("pageTitle").textContent=titles[page]||"رعاية";$("sidebar").classList.remove("open");if(page==="admin")renderAdmin();if(page==="directory")renderDirectory();window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll("#nav button").forEach(b=>b.addEventListener("click",()=>navigate(b.dataset.page)));
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>navigate(b.dataset.go)));
+$("menuBtn").addEventListener("click",()=>$("sidebar").classList.toggle("open"));
+function providerCard(p){const fav=db.favorites.includes(p.id);const phone=p.phone?`<a class="btn sm light" href="tel:${esc(p.phone)}">☎ اتصال</a><a class="btn sm ghost" target="_blank" rel="noopener" href="https://wa.me/${String(p.phone).replace(/\D/g,"")}">واتساب</a>`:"";
+return `<article class="card provider-card"><div class="provider-top"><div class="provider-icon">${typeIcon(p.type)}</div><div class="provider-title"><h3>${esc(p.name)}</h3><span class="tag">${esc(p.type)}</span> <span class="tag">${esc(p.specialty||"تخصص غير محدد")}</span></div><button class="favorite" data-fav="${esc(p.id)}" aria-label="تغيير المفضلة">${fav?"♥":"♡"}</button></div><div class="provider-meta"><span>📍 ${esc(p.area||"المنطقة غير محددة")}</span><span>⌖ ${esc(p.address||"العنوان غير متاح")}</span><span>◷ ${esc(p.hours||"ساعات العمل غير محددة")}</span><span>☎ ${esc(p.phone||"رقم التواصل غير متاح")}</span></div><p class="muted">${esc(p.description||"لا توجد تفاصيل إضافية.")}</p><div>${p.verified?'<span class="tag green">✓ تم التحقق إداريًا</span>':'<span class="tag gold">بحاجة للتحقق</span>'}</div><div class="provider-actions">${phone}<button class="btn sm ghost" data-report="${esc(p.id)}">⚑ إبلاغ عن خطأ</button></div></article>`}
+function wireCards(root){root.querySelectorAll("[data-fav]").forEach(b=>b.addEventListener("click",()=>{const id=b.dataset.fav;db.favorites=db.favorites.includes(id)?db.favorites.filter(x=>x!==id):[...db.favorites,id];save();toast(db.favorites.includes(id)?"أضيفت للمفضلة":"أزيلت من المفضلة")}));root.querySelectorAll("[data-report]").forEach(b=>b.addEventListener("click",()=>openReport(b.dataset.report)))}
+function renderDirectory(){const q=$("searchQuery").value.trim().toLowerCase(),t=$("filterType").value,a=$("filterArea").value;const list=db.providers.filter(p=>(!t||p.type===t)&&(!a||p.area===a)&&(!q||[p.name,p.type,p.specialty,p.area,p.address].some(x=>(x||"").toLowerCase().includes(q))));$("resultCount").textContent=`${list.length} نتيجة`; $("providerGrid").innerHTML=list.length?list.map(providerCard).join(""):'<div class="empty">لا توجد نتائج مطابقة. جرّب تغيير كلمات البحث أو الفلاتر.</div>';wireCards($("providerGrid"));fillAreaFilter()}
+function fillAreaFilter(){const sel=$("filterArea"),cur=sel.value,areas=[...new Set(db.providers.map(p=>p.area).filter(Boolean))].sort();sel.innerHTML='<option value="">كل المناطق</option>'+areas.map(a=>`<option>${esc(a)}</option>`).join("");if(areas.includes(cur))sel.value=cur}
+$("searchApply").addEventListener("click",renderDirectory);$("searchQuery").addEventListener("input",renderDirectory);$("filterType").addEventListener("change",renderDirectory);$("filterArea").addEventListener("change",renderDirectory);$("searchReset").addEventListener("click",()=>{$("searchQuery").value="";$("filterType").value="";$("filterArea").value="";renderDirectory()});
+function renderHome(){$("statProviders").textContent=db.providers.length;$("statMeds").textContent=db.medications.length;$("statFav").textContent=db.favorites.length;$("avatar").textContent=(db.profile.prName||"م").trim().charAt(0)||"م";$("homeProviders").innerHTML=db.providers.slice(0,3).map(providerCard).join("");wireCards($("homeProviders"))}
+function modal(title,html){$("modalTitle").textContent=title;$("modalBody").innerHTML=html;$("modalBackdrop").classList.add("open")}
+function closeModal(){$("modalBackdrop").classList.remove("open")}
+$("modalClose").addEventListener("click",closeModal);$("modalBackdrop").addEventListener("click",e=>{if(e.target===$("modalBackdrop"))closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+document.querySelectorAll("[data-open-add]").forEach(b=>b.addEventListener("click",()=>openProviderForm()));
+function openProviderForm(old=null){const p=old||{name:"",type:"طبيب",specialty:"",area:"",address:"",hours:"",phone:"",description:"",verified:false};
+modal(old?"تعديل بيانات مقدم الخدمة":"إضافة طبيب أو خدمة جديدة",`<form id="providerForm"><div class="notice">أدخل بيانات دقيقة ومحدثة. لا تضع علامة التحقق إلا بعد مراجعة البيانات فعليًا.</div><div class="form-grid">
+<div class="field"><label for="fName">اسم الطبيب / المنشأة / الخدمة *</label><input id="fName" required maxlength="140" value="${esc(p.name)}" placeholder="الاسم الظاهر في الدليل"></div>
+<div class="field"><label for="fType">نوع الخدمة *</label><select id="fType" required>${["طبيب","عيادة","مستشفى","صيدلية","معمل تحاليل","مركز أشعة","مركز طبي","علاج طبيعي"].map(x=>`<option ${p.type===x?"selected":""}>${x}</option>`).join("")}</select></div>
+<div class="field"><label for="fSpecialty">التخصص</label><input id="fSpecialty" value="${esc(p.specialty)}" placeholder="مثلاً: قلب، أطفال، أسنان"></div>
+<div class="field"><label for="fArea">المنطقة / المدينة</label><input id="fArea" value="${esc(p.area)}" placeholder="المدينة أو المنطقة"></div>
+<div class="field full"><label for="fAddress">العنوان التفصيلي</label><input id="fAddress" value="${esc(p.address)}" placeholder="الشارع، المبنى، علامة مميزة"></div>
+<div class="field"><label for="fHours">ساعات العمل</label><input id="fHours" value="${esc(p.hours)}" placeholder="الأيام والساعات"></div>
+<div class="field"><label for="fPhone">رقم الهاتف</label><input id="fPhone" type="tel" value="${esc(p.phone)}" placeholder="رقم التواصل"></div>
+<div class="field full"><label for="fDesc">وصف الخدمة / ملاحظات</label><textarea id="fDesc" rows="3" maxlength="700">${esc(p.description)}</textarea></div>
+<div class="field full"><label><input id="fVerified" type="checkbox" style="width:auto" ${p.verified?"checked":""}> تم التحقق من البيانات بواسطة الإدارة</label><span class="muted">استخدم هذا الخيار فقط بعد التحقق من مصدر موثوق.</span></div>
+</div><button class="btn">${old?"حفظ التعديلات":"إضافة إلى الدليل"}</button> <button type="button" class="btn ghost" id="cancelProvider">إلغاء</button></form>`);
+$("cancelProvider").addEventListener("click",closeModal);$("providerForm").addEventListener("submit",e=>{e.preventDefault();const item={id:p.id||uid(),name:$("fName").value.trim(),type:$("fType").value,specialty:$("fSpecialty").value.trim(),area:$("fArea").value.trim(),address:$("fAddress").value.trim(),hours:$("fHours").value.trim(),phone:$("fPhone").value.trim(),description:$("fDesc").value.trim(),verified:$("fVerified").checked};if(old)db.providers=db.providers.map(x=>x.id===old.id?item:x);else db.providers.unshift(item);db.notifications.unshift({id:uid(),text:old?"تم تعديل بيانات خدمة في الدليل.":"تمت إضافة خدمة جديدة إلى الدليل.",date:new Date().toISOString()});save();closeModal();renderAdmin();renderDirectory();toast(old?"تم حفظ التعديلات":"تمت إضافة الخدمة بنجاح")})}
+function openReport(id){const p=db.providers.find(x=>x.id===id);modal("الإبلاغ عن بيانات غير صحيحة",`<p class="muted">الخدمة: ${esc(p?.name||"غير معروفة")}</p><form id="reportForm"><div class="field"><label>نوع الخطأ *</label><select id="rType" required><option value="">اختر نوع الخطأ</option><option>رقم هاتف غير صحيح</option><option>عنوان غير صحيح</option><option>ساعات عمل غير صحيحة</option><option>خدمة غير موجودة</option><option>تخصص أو اسم غير صحيح</option><option>معلومات أخرى</option></select></div><div class="field"><label>التفاصيل *</label><textarea id="rDetails" rows="3" required></textarea></div><button class="btn">إرسال البلاغ</button></form>`);$("reportForm").addEventListener("submit",e=>{e.preventDefault();db.reports.unshift({id:uid(),providerId:id,type:$("rType").value,details:$("rDetails").value.trim(),date:new Date().toISOString(),status:"قيد المراجعة"});db.notifications.unshift({id:uid(),text:"تم تسجيل بلاغ عن بيانات خدمة للمراجعة.",date:new Date().toISOString()});save();closeModal();toast("تم تسجيل البلاغ")})}
+function renderAdmin(){const q=($("adminSearch")?.value||"").trim().toLowerCase(),t=$("adminFilter")?.value||"";const list=db.providers.filter(p=>(!t||p.type===t)&&(!q||[p.name,p.specialty,p.area,p.address,p.phone].some(v=>(v||"").toLowerCase().includes(q))));$("adminServices").textContent=db.providers.length;$("adminReports").textContent=db.reports.filter(r=>r.status==="قيد المراجعة").length;$("adminFavs").textContent=db.favorites.length;$("adminTable").innerHTML=list.length?list.map(p=>`<tr><td><b>${esc(p.name)}</b><br>${p.verified?'<span class="tag green">تم التحقق</span>':'<span class="tag gold">غير متحقق</span>'}</td><td>${esc(p.type)}<br><span class="muted">${esc(p.specialty)}</span></td><td>${esc(p.area)}<br><span class="muted">${esc(p.address)}</span></td><td>${esc(p.phone||"غير متاح")}<br><span class="muted">${esc(p.hours)}</span></td><td><button class="btn sm light" data-edit="${esc(p.id)}">تعديل</button><button class="btn sm ghost" data-verify="${esc(p.id)}">${p.verified?"إلغاء التحقق":"تأكيد التحقق"}</button><button class="btn sm danger" data-delete="${esc(p.id)}">حذف</button></td></tr>`).join(""):'<tr><td colspan="5">لا توجد نتائج.</td></tr>';
+$("adminTable").querySelectorAll("[data-edit]").forEach(b=>b.addEventListener("click",()=>openProviderForm(db.providers.find(p=>p.id===b.dataset.edit))));$("adminTable").querySelectorAll("[data-verify]").forEach(b=>b.addEventListener("click",()=>{const p=db.providers.find(x=>x.id===b.dataset.verify);if(p){p.verified=!p.verified;save();renderAdmin();toast(p.verified?"تم وضع علامة التحقق":"تم إلغاء علامة التحقق")}}));$("adminTable").querySelectorAll("[data-delete]").forEach(b=>b.addEventListener("click",()=>{const p=db.providers.find(x=>x.id===b.dataset.delete);if(p&&confirm(`حذف "${p.name}" من الدليل؟`)){db.providers=db.providers.filter(x=>x.id!==p.id);db.favorites=db.favorites.filter(x=>x!==p.id);save();renderAdmin();toast("تم حذف الخدمة")}}));
+$("reportList").innerHTML=db.reports.length?db.reports.map(r=>{const p=db.providers.find(x=>x.id===r.providerId);return `<div class="report-row"><div><b>${esc(p?.name||"مقدم خدمة محذوف")}</b><div class="muted">${esc(r.type)} — ${esc(r.details)}</div><div class="muted">${new Date(r.date).toLocaleString("ar-EG")}</div><span class="tag ${r.status==="تمت المراجعة"?"green":"gold"}">${esc(r.status)}</span></div><div>${r.status==="قيد المراجعة"?`<button class="btn sm success" data-resolve="${r.id}">تمت المراجعة</button>`:""} <button class="btn sm danger" data-rdelete="${r.id}">حذف</button></div></div>`}).join(""):'<p class="muted">لا توجد بلاغات.</p>';
+$("reportList").querySelectorAll("[data-resolve]").forEach(b=>b.addEventListener("click",()=>{const r=db.reports.find(x=>x.id===b.dataset.resolve);if(r)r.status="تمت المراجعة";save();renderAdmin()}));$("reportList").querySelectorAll("[data-rdelete]").forEach(b=>b.addEventListener("click",()=>{db.reports=db.reports.filter(r=>r.id!==b.dataset.rdelete);save();renderAdmin()}))}
+$("adminSearchBtn").addEventListener("click",renderAdmin);$("adminSearch").addEventListener("input",renderAdmin);$("adminFilter").addEventListener("change",renderAdmin);
+function loadProfile(){["prName","prPhone","prBirth","prBlood","prAllergies","prConditions","prMeds","prNotes"].forEach(id=>$(id).value=db.profile[id]||"")}
+$("profileForm").addEventListener("submit",e=>{e.preventDefault();const p={};["prName","prPhone","prBirth","prBlood","prAllergies","prConditions","prMeds","prNotes"].forEach(id=>p[id]=$(id).value.trim());db.profile=p;db.notifications.unshift({id:uid(),text:"تم حفظ الملف الصحي محليًا.",date:new Date().toISOString()});save();toast("تم حفظ الملف الصحي")});$("printProfile").addEventListener("click",()=>window.print());
+function openMedForm(){modal("إضافة دواء",`<form id="medForm"><div class="form-grid"><div class="field"><label>اسم الدواء *</label><input id="mName" required></div><div class="field"><label>الجرعة حسب الوصفة</label><input id="mDose" placeholder="كما وصفها المختص"></div><div class="field"><label>الكمية الحالية بالوحدات *</label><input id="mStock" type="number" min="0" step="0.5" value="30" required></div><div class="field"><label>الوحدات لكل جرعة *</label><input id="mPer" type="number" min="0.1" step="0.1" value="1" required></div><div class="field"><label>مرات يوميًا حسب الوصفة</label><input id="mDaily" type="number" min="1" max="24" value="1" required></div><div class="field"><label>وقت التذكير المفضل</label><input id="mTime" type="time"></div><div class="field full"><label>تعليمات إضافية</label><textarea id="mNotes" rows="2"></textarea></div></div><button class="btn">حفظ الدواء</button></form>`);$("medForm").addEventListener("submit",e=>{e.preventDefault();db.medications.unshift({id:uid(),name:$("mName").value.trim(),dose:$("mDose").value.trim(),stock:Number($("mStock").value),per:Number($("mPer").value),daily:Number($("mDaily").value),time:$("mTime").value,notes:$("mNotes").value.trim()});db.notifications.unshift({id:uid(),text:"تمت إضافة دواء إلى القائمة. راجع الوصفة لتأكيد التفاصيل.",date:new Date().toISOString()});save();closeModal();toast("تمت إضافة الدواء")})}
+$("newMedication").addEventListener("click",openMedForm);
+function renderMeds(){$("medGrid").innerHTML=db.medications.length?db.medications.map(m=>{const days=m.daily>0&&m.per>0?Math.floor(m.stock/(m.daily*m.per)):0,low=days<=3;return `<article class="card"><div class="provider-top"><div class="provider-icon">💊</div><div class="provider-title"><h3>${esc(m.name)}</h3><p class="muted">${esc(m.dose||"راجع الوصفة الطبية")}</p></div><button class="btn sm danger" data-mdel="${m.id}">حذف</button></div><div class="progress"><span style="width:${Math.max(0,Math.min(100,m.stock/Math.max(30,m.stock)*100))}%"></span></div><p class="muted">المخزون: <b>${m.stock}</b> وحدة</p><p style="font-size:12px;color:${low?"#a84c55":"#49745d"}">${low?"⚠ الكمية التقديرية منخفضة؛ تواصل مع الصيدلي لتجنب نفاد الدواء.":`الكمية قد تكفي حوالي ${days} يومًا حسب القيم المدخلة.`}</p>${m.time?`<p class="muted">وقت التذكير: ${esc(m.time)} — لا يرسل تنبيهًا بالخلفية.</p>`:""}${m.notes?`<p class="muted">${esc(m.notes)}</p>`:""}<button class="btn" data-dose="${m.id}">تسجيل جرعة تم تناولها</button></article>`}).join(""):'<div class="empty">لا توجد أدوية مسجلة. اضغط «إضافة دواء» للبدء.</div>';
+$("medGrid").querySelectorAll("[data-dose]").forEach(b=>b.addEventListener("click",()=>{const m=db.medications.find(x=>x.id===b.dataset.dose);if(!m)return;if(m.stock<m.per){toast("الكمية المدخلة لا تكفي. راجع الصيدلي.");return}if(!confirm(`هل تناولت جرعة ${m.name} بالفعل وتريد تسجيلها؟`))return;m.stock=Math.max(0,m.stock-m.per);db.doses.unshift({id:uid(),medId:m.id,name:m.name,amount:m.per,date:new Date().toISOString()});db.notifications.unshift({id:uid(),text:`تم تسجيل جرعة ${m.name} بناءً على تأكيدك.`,date:new Date().toISOString()});save();toast("تم تسجيل الجرعة")}));
+$("medGrid").querySelectorAll("[data-mdel]").forEach(b=>b.addEventListener("click",()=>{if(confirm("حذف الدواء؟")){db.medications=db.medications.filter(m=>m.id!==b.dataset.mdel);save()}}));
+$("doseLog").innerHTML=db.doses.length?db.doses.slice(0,30).map(d=>`<div class="dose-row"><div><b>${esc(d.name)}</b><div class="muted">الكمية ${d.amount} — ${new Date(d.date).toLocaleString("ar-EG")}</div></div><span class="tag green">مسجل</span></div>`).join(""):'<p class="muted">لا توجد جرعات مسجلة.</p>'}
+$("interactionInfo").addEventListener("click",()=>modal("تنبيه بخصوص تفاعلات الأدوية",'<div class="notice">لا تتصل هذه النسخة بقاعدة بيانات دوائية موثوقة، ولا يمكنها تأكيد أن الجمع بين دوائين آمن.</div><p>اسأل الطبيب أو الصيدلي عن جميع الأدوية والمكملات التي تستخدمها. لا توقف دواءً أو تغيّر الجرعة بناءً على هذا التطبيق.</p><button class="btn" id="ackInteraction">فهمت</button>'));$("modalBody").addEventListener("click",e=>{if(e.target.id==="ackInteraction")closeModal()});
+$("labFile").addEventListener("change",()=>{const f=$("labFile").files[0],img=$("labPreview");if(!f){img.classList.add("hide");return}if(!f.type.startsWith("image/")){toast("اختَر ملف صورة صالحًا.");$("labFile").value="";return}const r=new FileReader();r.onload=()=>{img.src=r.result;img.classList.remove("hide")};r.readAsDataURL(f)});
+$("labForm").addEventListener("submit",e=>{e.preventDefault();db.labs.unshift({id:uid(),name:$("labTitle").value.trim(),date:$("labWhen").value,notes:$("labText").value.trim(),created:new Date().toISOString()});db.notifications.unshift({id:uid(),text:"تم حفظ معلومات تقرير مختبر. راجع النتائج مع مختص.",date:new Date().toISOString()});save();$("labForm").reset();$("labPreview").classList.add("hide");renderLabs();toast("تم حفظ التقرير")});
+function renderLabs(){$("labGrid").innerHTML=db.labs.length?db.labs.map(l=>`<article class="card"><h3>🧪 ${esc(l.name)}</h3><p class="muted">تاريخ التقرير: ${esc(l.date||"غير محدد")}</p><p>${esc(l.notes||"لا توجد ملاحظات.")}</p><button class="btn sm danger" data-ldel="${l.id}">حذف</button></article>`).join(""):'<div class="empty">لم تحفظ تقارير بعد.</div>';$("labGrid").querySelectorAll("[data-ldel]").forEach(b=>b.addEventListener("click",()=>{db.labs=db.labs.filter(l=>l.id!==b.dataset.ldel);save()}))}
+function renderFavorites(){const list=db.providers.filter(p=>db.favorites.includes(p.id));$("favoriteGrid").innerHTML=list.length?list.map(providerCard).join(""):'<div class="empty">لا توجد خدمات مفضلة حتى الآن. اضغط ♡ في بطاقة الخدمة لحفظها.</div>';wireCards($("favoriteGrid"))}
+function renderNotifications(){$("noticeList").innerHTML=db.notifications.length?db.notifications.map(n=>`<div class="notification-row"><div><b>${esc(n.text)}</b><div class="muted">${new Date(n.date).toLocaleString("ar-EG")}</div></div></div>`).join(""):'<p class="muted">لا توجد إشعارات.</p>'}
+$("clearNotices").addEventListener("click",()=>{if(confirm("مسح الإشعارات كلها؟")){db.notifications=[];save()}});
+function renderAll(){renderHome();renderDirectory();renderMeds();renderLabs();renderFavorites();renderNotifications();renderAdmin()}
+function replyFor(t){const x=t.toLowerCase();if(/صدر|ضيق التنفس|صعوبة التنفس|اختناق|إغماء|فقدان الوعي|نزيف شديد/.test(x))return"قد تكون هذه حالة طارئة. اتصل بالإسعاف المحلي أو اذهب إلى الطوارئ فورًا، ولا تعتمد على المحادثة لتقييم الأعراض.";if(/أسنان|ضرس|لثة/.test(x))return"قد يكون طبيب الأسنان التخصص المناسب لمشكلات الأسنان أو اللثة. التورم السريع أو صعوبة البلع والتنفس يستدعي رعاية عاجلة.";if(/جلد|طفح|حكة|حبوب/.test(x))return"قد يساعد طبيب الجلدية في تقييم هذه الأعراض. لا يمكن تحديد السبب من رسالة قصيرة.";if(/عين|نظر|رؤية/.test(x))return"قد يكون طبيب العيون مناسبًا. فقدان الرؤية المفاجئ أو ألم العين الشديد يحتاج تقييمًا عاجلًا.";if(/أذن|أنف|حلق|جيوب/.test(x))return"قد يكون طبيب الأنف والأذن والحنجرة مناسبًا لتقييم هذه الأعراض.";if(/طفل|رضيع|ابني|بنتي/.test(x))return"قد يكون طبيب الأطفال نقطة بداية مناسبة. صعوبة التنفس أو الخمول الشديد لدى الطفل يستلزم رعاية عاجلة.";if(/حمل|حامل|دورة|حيض/.test(x))return"قد يكون طبيب النساء والتوليد مناسبًا حسب طبيعة الأعراض. الألم الشديد أو النزيف الغزير أثناء الحمل يحتاج تقييمًا عاجلًا.";if(/عظام|مفصل|ركبة|ظهر|كسر/.test(x))return"قد يكون طبيب العظام مناسبًا لبعض مشكلات العظام والمفاصل. الإصابات الشديدة تستدعي تقييمًا مباشرًا.";if(/معدة|بطن|هضم|قولون|غثيان/.test(x))return"قد تبدأ بطبيب باطنة أو جهاز هضمي. ألم البطن الشديد أو المتزايد يحتاج تقييمًا سريعًا.";if(/قلب|خفقان|ضغط/.test(x))return"قد يساعد طبيب الباطنة أو القلب في تقييم هذه الأعراض. ألم الصدر الشديد أو المصحوب بضيق تنفس يستدعي الطوارئ.";return"لا أستطيع تشخيص الأعراض من رسالة قصيرة. قد يكون طبيب الأسرة أو الباطنة نقطة بداية للأعراض العامة، ويحدد المختص التخصص المناسب بعد التقييم. إذا كانت الأعراض شديدة أو تتفاقم، اطلب رعاية مباشرة."}
+function addMessage(t,who){const el=document.createElement("div");el.className="msg "+who;el.textContent=t;$("chatbox").appendChild(el);$("chatbox").scrollTop=$("chatbox").scrollHeight}
+let reayaChatHistory = [];
+$("chatForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const input = $("chatInput");
+  const t = input.value.trim();
+  if (!t) return;
+  addMessage(t, "user");
+  input.value = "";
+  const sendButton = $("chatForm").querySelector("button");
+  sendButton.disabled = true;
+  const oldLabel = sendButton.textContent;
+  sendButton.textContent = "جاري الرد...";
+  try {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message: t,
+        history: reayaChatHistory.slice(-10)
+      })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.error || "تعذر الاتصال بالمساعد.");
+    const answer = String(data.reply || "").trim() || "لم يصل رد واضح. حاول مرة أخرى.";
+    addMessage(answer, "bot");
+    reayaChatHistory.push({ role: "user", text: t }, { role: "assistant", text: answer });
+    reayaChatHistory = reayaChatHistory.slice(-10);
+  } catch (err) {
+    addMessage("مش قادر أوصل للمساعد الذكي حاليًا. تأكد إن السيرفر شغال وإن مفتاح Gemini مضبوط، ثم جرّب تاني.\\n" + (err.message || ""), "bot");
+  } finally {
+    sendButton.disabled = false;
+    sendButton.textContent = oldLabel;
+    input.focus();
+  }
+});
+function download(name,content,type){const blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),500)}
+$("exportAll").addEventListener("click",()=>download("reaya-backup.json",JSON.stringify(db,null,2),"application/json"));
+$("exportProviders").addEventListener("click",()=>{const rows=[["name","type","specialty","area","address","hours","phone","description","verified"],...db.providers.map(p=>[p.name,p.type,p.specialty,p.area,p.address,p.hours,p.phone,p.description,p.verified?"yes":"no"])];const csv="\uFEFF"+rows.map(r=>r.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\r\n");download("reaya-services.csv",csv,"text/csv;charset=utf-8")});
+$("importData").addEventListener("click",()=>{const f=$("importFile").files[0];if(!f){toast("اختَر ملف JSON أولًا.");return}const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!d||!Array.isArray(d.providers)||!Array.isArray(d.medications))throw 0;if(!confirm("سيتم استبدال البيانات الحالية. هل تريد المتابعة؟"))return;db={...fresh(),...d};save();loadProfile();toast("تم استيراد النسخة الاحتياطية")}catch(e){toast("الملف غير صالح أو ليس نسخة رعاية احتياطية.")}};r.readAsText(f)});
+$("resetData").addEventListener("click",()=>{if(confirm("سيتم حذف بيانات رعاية المحلية وإعادة الأمثلة التجريبية. هل تريد المتابعة؟")){db=fresh();save();loadProfile();toast("تمت إعادة ضبط البيانات")}});
+
+function init(){loadProfile();renderAll()}
+init();
+</script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch((error) => {
+      console.warn("Reaya offline support could not be enabled.", error);
+    });
+  });
+}
+</script>
+</body>
+</html>
